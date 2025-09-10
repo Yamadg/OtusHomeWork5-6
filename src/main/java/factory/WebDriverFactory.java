@@ -14,10 +14,6 @@ public class WebDriverFactory {
 
     private static final Logger logger = LogManager.getLogger(WebDriverFactory.class);
 
-    private WebDriverFactory() {
-    }
-
-
     public static WebDriver create(String webDriverName, AbstractDriverOptions options) {
         logger.info("Попытка создать WebDriver для: {}", webDriverName);
         DriverType driverType = DriverType.fromString(webDriverName);
